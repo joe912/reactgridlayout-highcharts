@@ -37,7 +37,6 @@ class Chart extends Component {
 
   componentWillReceiveProps(newProps) {
     if (this.props.lastResize !== newProps.lastResize) {
-      console.log("fecking resize this fucker");
       const mychartheight = this.divElement.clientHeight;
       this.setState({ mychartheight });
     }
