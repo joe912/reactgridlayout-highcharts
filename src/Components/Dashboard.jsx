@@ -34,13 +34,13 @@ class Dashboard extends Component {
             className="layout"
             cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
             rowHeight={30}
-            useCSSTransforms="true"
+            useCSSTransforms={true}
             layouts={this.state.layouts}
             onLayoutChange={(layout, layouts) =>
               this.onLayoutChange(layout, layouts)
             }
-            isDraggable="true"
-            isResizable="true"
+            isDraggable={true}
+            isResizable={true}
             compactType="vertical"
           >
             {this.state.widgets.map(l => {
