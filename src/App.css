@@ -101,10 +101,10 @@
 /********************************** dashboard ******************************/
 .dashboard-widget {
   overflow: hidden;
-  border: 1px dotted blueviolet;
 }
 .widget {
   padding: 5px 10px;
+  height: 100%;
 }
 .widget-edit {
   cursor: move;
@@ -118,4 +118,10 @@
 
 .dashboard-grid {
   position: relative;
+}
+
+.trend-widget {
+  width: 100%;
+  height: 100%;
+  border: 3px blueviolet ridge;
 }
