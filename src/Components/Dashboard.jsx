@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { WidthProvider, Responsive } from "react-grid-layout";
-import _ from "lodash";
+import Chart from "./Chart";
+
 const ResponsiveReactGridLayout = WidthProvider(Responsive);
 
 const ffs = [
@@ -45,7 +46,10 @@ class Dashboard extends Component {
             {this.state.widgets.map(l => {
               return (
                 <div key={l.i} className="dashboard-widget">
-                  <div className="widget widget-edit">widget cont {l.i}</div>
+                  <div className="widget widget-edit">
+                    {l.i === "1" && <Chart />}
+                    {l.i !== "1" && <span> widget other {l.i} </span>}
+                  </div>
                 </div>
               );
             })}
